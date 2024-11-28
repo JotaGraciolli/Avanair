@@ -1,0 +1,468 @@
+﻿[
+  {
+    "nodes": [
+      {
+        "identity": -248,
+        "labels": [
+          "AirportType"
+        ],
+        "properties": {
+          "name": "AirportType",
+          "indexes": [],
+          "constraints": [
+            "Constraint( id=21, name='constraintAirportTypeCode', type='NODE KEY', schema=(:AirportType {code}), ownedIndex=20 )"
+          ]
+        },
+        "elementId": "-248"
+      },
+      {
+        "identity": -251,
+        "labels": [
+          "Continent"
+        ],
+        "properties": {
+          "name": "Continent",
+          "indexes": [],
+          "constraints": [
+            "Constraint( id=23, name='constraintContinentCode', type='NODE KEY', schema=(:Continent {code}), ownedIndex=22 )"
+          ]
+        },
+        "elementId": "-251"
+      },
+      {
+        "identity": -246,
+        "labels": [
+          "Airline"
+        ],
+        "properties": {
+          "name": "Airline",
+          "indexes": [],
+          "constraints": [
+            "Constraint( id=17, name='constraintAirlineCode', type='NODE KEY', schema=(:Airline {code}), ownedIndex=16 )"
+          ]
+        },
+        "elementId": "-246"
+      },
+      {
+        "identity": -252,
+        "labels": [
+          "RunwaySurface"
+        ],
+        "properties": {
+          "name": "RunwaySurface",
+          "indexes": [],
+          "constraints": [
+            "Constraint( id=29, name='constraintRunwaySurfaceCode', type='NODE KEY', schema=(:RunwaySurface {code}), ownedIndex=28 )"
+          ]
+        },
+        "elementId": "-252"
+      },
+      {
+        "identity": -245,
+        "labels": [
+          "Airport"
+        ],
+        "properties": {
+          "name": "Airport",
+          "indexes": [],
+          "constraints": [
+            "Constraint( id=15, name='constraintAirportCode', type='NODE KEY', schema=(:Airport {code}), ownedIndex=14 )"
+          ]
+        },
+        "elementId": "-245"
+      },
+      {
+        "identity": -249,
+        "labels": [
+          "Country"
+        ],
+        "properties": {
+          "name": "Country",
+          "indexes": [],
+          "constraints": [
+            "Constraint( id=25, name='constraintCountryCode', type='NODE KEY', schema=(:Country {code}), ownedIndex=24 )"
+          ]
+        },
+        "elementId": "-249"
+      },
+      {
+        "identity": -250,
+        "labels": [
+          "Region"
+        ],
+        "properties": {
+          "name": "Region",
+          "indexes": [],
+          "constraints": [
+            "Constraint( id=27, name='constraintRegionCode', type='NODE KEY', schema=(:Region {code}), ownedIndex=26 )"
+          ]
+        },
+        "elementId": "-250"
+      },
+      {
+        "identity": -247,
+        "labels": [
+          "Fligth"
+        ],
+        "properties": {
+          "name": "Fligth",
+          "indexes": [],
+          "constraints": [
+            "Constraint( id=19, name='constraintFlightCode', type='NODE KEY', schema=(:Fligth {code}), ownedIndex=18 )"
+          ]
+        },
+        "elementId": "-247"
+      },
+      {
+        "identity": -253,
+        "labels": [
+          "Intercontinental"
+        ],
+        "properties": {
+          "name": "Intercontinental",
+          "indexes": [],
+          "constraints": []
+        },
+        "elementId": "-253"
+      },
+      {
+        "identity": -254,
+        "labels": [
+          "International"
+        ],
+        "properties": {
+          "name": "International",
+          "indexes": [],
+          "constraints": []
+        },
+        "elementId": "-254"
+      }
+    ],
+    "relationships": [
+      {
+        "identity": -261,
+        "start": -250,
+        "end": -249,
+        "type": "IS_IN_COUNTRY",
+        "properties": {
+          "name": "IS_IN_COUNTRY"
+        },
+        "elementId": "-261",
+        "startNodeElementId": "-250",
+        "endNodeElementId": "-249"
+      },
+      {
+        "identity": -263,
+        "start": -253,
+        "end": -250,
+        "type": "IS_IN_REGION",
+        "properties": {
+          "name": "IS_IN_REGION"
+        },
+        "elementId": "-263",
+        "startNodeElementId": "-253",
+        "endNodeElementId": "-250"
+      },
+      {
+        "identity": -262,
+        "start": -245,
+        "end": -250,
+        "type": "IS_IN_REGION",
+        "properties": {
+          "name": "IS_IN_REGION"
+        },
+        "elementId": "-262",
+        "startNodeElementId": "-245",
+        "endNodeElementId": "-250"
+      },
+      {
+        "identity": -264,
+        "start": -254,
+        "end": -250,
+        "type": "IS_IN_REGION",
+        "properties": {
+          "name": "IS_IN_REGION"
+        },
+        "elementId": "-264",
+        "startNodeElementId": "-254",
+        "endNodeElementId": "-250"
+      },
+      {
+        "identity": -275,
+        "start": -254,
+        "end": -245,
+        "type": "IS_CONECTET_TO",
+        "properties": {
+          "name": "IS_CONECTET_TO"
+        },
+        "elementId": "-275",
+        "startNodeElementId": "-254",
+        "endNodeElementId": "-245"
+      },
+      {
+        "identity": -270,
+        "start": -245,
+        "end": -253,
+        "type": "IS_CONECTET_TO",
+        "properties": {
+          "name": "IS_CONECTET_TO"
+        },
+        "elementId": "-270",
+        "startNodeElementId": "-245",
+        "endNodeElementId": "-253"
+      },
+      {
+        "identity": -272,
+        "start": -253,
+        "end": -245,
+        "type": "IS_CONECTET_TO",
+        "properties": {
+          "name": "IS_CONECTET_TO"
+        },
+        "elementId": "-272",
+        "startNodeElementId": "-253",
+        "endNodeElementId": "-245"
+      },
+      {
+        "identity": -277,
+        "start": -254,
+        "end": -254,
+        "type": "IS_CONECTET_TO",
+        "properties": {
+          "name": "IS_CONECTET_TO"
+        },
+        "elementId": "-277",
+        "startNodeElementId": "-254",
+        "endNodeElementId": "-254"
+      },
+      {
+        "identity": -271,
+        "start": -245,
+        "end": -254,
+        "type": "IS_CONECTET_TO",
+        "properties": {
+          "name": "IS_CONECTET_TO"
+        },
+        "elementId": "-271",
+        "startNodeElementId": "-245",
+        "endNodeElementId": "-254"
+      },
+      {
+        "identity": -274,
+        "start": -253,
+        "end": -254,
+        "type": "IS_CONECTET_TO",
+        "properties": {
+          "name": "IS_CONECTET_TO"
+        },
+        "elementId": "-274",
+        "startNodeElementId": "-253",
+        "endNodeElementId": "-254"
+      },
+      {
+        "identity": -269,
+        "start": -245,
+        "end": -245,
+        "type": "IS_CONECTET_TO",
+        "properties": {
+          "name": "IS_CONECTET_TO"
+        },
+        "elementId": "-269",
+        "startNodeElementId": "-245",
+        "endNodeElementId": "-245"
+      },
+      {
+        "identity": -273,
+        "start": -253,
+        "end": -253,
+        "type": "IS_CONECTET_TO",
+        "properties": {
+          "name": "IS_CONECTET_TO"
+        },
+        "elementId": "-273",
+        "startNodeElementId": "-253",
+        "endNodeElementId": "-253"
+      },
+      {
+        "identity": -276,
+        "start": -254,
+        "end": -253,
+        "type": "IS_CONECTET_TO",
+        "properties": {
+          "name": "IS_CONECTET_TO"
+        },
+        "elementId": "-276",
+        "startNodeElementId": "-254",
+        "endNodeElementId": "-253"
+      },
+      {
+        "identity": -265,
+        "start": -249,
+        "end": -251,
+        "type": "IS_IN_CONTINENT",
+        "properties": {
+          "name": "IS_IN_CONTINENT"
+        },
+        "elementId": "-265",
+        "startNodeElementId": "-249",
+        "endNodeElementId": "-251"
+      },
+      {
+        "identity": -258,
+        "start": -245,
+        "end": -248,
+        "type": "IS_TYPE",
+        "properties": {
+          "name": "IS_TYPE"
+        },
+        "elementId": "-258",
+        "startNodeElementId": "-245",
+        "endNodeElementId": "-248"
+      },
+      {
+        "identity": -259,
+        "start": -253,
+        "end": -248,
+        "type": "IS_TYPE",
+        "properties": {
+          "name": "IS_TYPE"
+        },
+        "elementId": "-259",
+        "startNodeElementId": "-253",
+        "endNodeElementId": "-248"
+      },
+      {
+        "identity": -260,
+        "start": -254,
+        "end": -248,
+        "type": "IS_TYPE",
+        "properties": {
+          "name": "IS_TYPE"
+        },
+        "elementId": "-260",
+        "startNodeElementId": "-254",
+        "endNodeElementId": "-248"
+      },
+      {
+        "identity": -256,
+        "start": -247,
+        "end": -254,
+        "type": "DESTINATION",
+        "properties": {
+          "name": "DESTINATION"
+        },
+        "elementId": "-256",
+        "startNodeElementId": "-247",
+        "endNodeElementId": "-254"
+      },
+      {
+        "identity": -255,
+        "start": -247,
+        "end": -253,
+        "type": "DESTINATION",
+        "properties": {
+          "name": "DESTINATION"
+        },
+        "elementId": "-255",
+        "startNodeElementId": "-247",
+        "endNodeElementId": "-253"
+      },
+      {
+        "identity": -254,
+        "start": -247,
+        "end": -245,
+        "type": "DESTINATION",
+        "properties": {
+          "name": "DESTINATION"
+        },
+        "elementId": "-254",
+        "startNodeElementId": "-247",
+        "endNodeElementId": "-245"
+      },
+      {
+        "identity": -266,
+        "start": -245,
+        "end": -252,
+        "type": "RUNWAY_SURFACE_IS",
+        "properties": {
+          "name": "RUNWAY_SURFACE_IS"
+        },
+        "elementId": "-266",
+        "startNodeElementId": "-245",
+        "endNodeElementId": "-252"
+      },
+      {
+        "identity": -268,
+        "start": -254,
+        "end": -252,
+        "type": "RUNWAY_SURFACE_IS",
+        "properties": {
+          "name": "RUNWAY_SURFACE_IS"
+        },
+        "elementId": "-268",
+        "startNodeElementId": "-254",
+        "endNodeElementId": "-252"
+      },
+      {
+        "identity": -267,
+        "start": -253,
+        "end": -252,
+        "type": "RUNWAY_SURFACE_IS",
+        "properties": {
+          "name": "RUNWAY_SURFACE_IS"
+        },
+        "elementId": "-267",
+        "startNodeElementId": "-253",
+        "endNodeElementId": "-252"
+      },
+      {
+        "identity": -253,
+        "start": -254,
+        "end": -247,
+        "type": "SOURCE",
+        "properties": {
+          "name": "SOURCE"
+        },
+        "elementId": "-253",
+        "startNodeElementId": "-254",
+        "endNodeElementId": "-247"
+      },
+      {
+        "identity": -252,
+        "start": -253,
+        "end": -247,
+        "type": "SOURCE",
+        "properties": {
+          "name": "SOURCE"
+        },
+        "elementId": "-252",
+        "startNodeElementId": "-253",
+        "endNodeElementId": "-247"
+      },
+      {
+        "identity": -251,
+        "start": -245,
+        "end": -247,
+        "type": "SOURCE",
+        "properties": {
+          "name": "SOURCE"
+        },
+        "elementId": "-251",
+        "startNodeElementId": "-245",
+        "endNodeElementId": "-247"
+      },
+      {
+        "identity": -257,
+        "start": -246,
+        "end": -247,
+        "type": "OPERATES",
+        "properties": {
+          "name": "OPERATES"
+        },
+        "elementId": "-257",
+        "startNodeElementId": "-246",
+        "endNodeElementId": "-247"
+      }
+    ]
+  }
+]
